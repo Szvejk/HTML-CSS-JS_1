@@ -66,8 +66,20 @@ h1 {
 	justify-content: center;
 	backdrop-filter: blur(5px);
 }
+.popup.hidden {
+	display: none;
+}
 .popup__img {
 	max-height: 80%;
 	max-width: 80%;
 }
-.popup.hidden
+.popup__close {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.5);
+	border:none;
+	cursor: pointer;
+	position: fixed;
+	right: 52px;
+	top: 32px;
+	font-size: 78px;
+}
