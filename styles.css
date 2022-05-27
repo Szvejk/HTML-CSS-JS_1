@@ -55,6 +55,7 @@ h1 {
 }
 .popup {
 	align-content: center;
+	animation: fadeIn 0.4s;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100vh;
@@ -69,6 +70,10 @@ h1 {
 .popup.hidden {
 	display: none;
 }
+.popup.fade-out {
+	animation: fadeOut 0.4s both;
+}
+
 .popup__img {
 	max-height: 80%;
 	max-width: 80%;
@@ -111,4 +116,23 @@ h1 {
 }
 .popup__arrow--right {
 	right: 3%;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+.photo img:focus {
+	border: solid 5px black;
 }
